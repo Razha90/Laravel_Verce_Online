@@ -33,8 +33,6 @@ class ProductsController extends Controller
         $data->name = request('name');
         $data->price = request('price');
         $data->stock = request('stock');
-        $data->created_at = request('created_at');
-        $data->updated_at = request('updated_at');
         $data->save();
         return response ()->json('datas created', 201);
     }
